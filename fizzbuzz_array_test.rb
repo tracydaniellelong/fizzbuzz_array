@@ -29,4 +29,7 @@ class Testing < Minitest::Test
 	def test_number_58
 		assert_equal([58], fizz(58, fizz_array))
 	end
+	def test_number_80
+		assert_equal(["Minds"], fizz(80, fizz_array))
+	end
 end
