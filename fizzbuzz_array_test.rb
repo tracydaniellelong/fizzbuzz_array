@@ -2,6 +2,9 @@ require 'minitest/autorun'
 require_relative 'fizzbuzz_array.rb'
 
 class Testing < Minitest::Test
+	def test_1
+		assert_equal(1,1)
+	end
 	def test_array
 		assert_equal(Array, fizz_array.class)
 	end
@@ -19,5 +22,8 @@ class Testing < Minitest::Test
 	end
 	def test_number_67
 		assert_equal([67], fizz(67, fizz_array))
+	end
+	def test_number_78
+		assert_equal(["Mined"], fizz(78, fizz_array))
 	end
 end
