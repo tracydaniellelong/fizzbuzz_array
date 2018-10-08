@@ -14,3 +14,14 @@ def fizz(b, fizzbuzz_array)
 	end
 end
 
+b = 1
+fizzbuzz_array = []
+
+until b == 101
+	fizz(b, fizzbuzz_array)
+	b += 1
+	if b == 101
+		p fizzbuzz_array[0...100]
+	end
+end
+ 
